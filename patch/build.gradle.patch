@@ -1,0 +1,16 @@
+diff --git a/Ghidra/Framework/Docking/build.gradle b/Ghidra/Framework/Docking/build.gradle
+index 1e5d0bc93..a42143ca1 100644
+--- a/Ghidra/Framework/Docking/build.gradle
++++ b/Ghidra/Framework/Docking/build.gradle
+@@ -9,7 +9,10 @@ eclipse.project.name = 'Framework Docking'
+ dependencies {
+ 	compile project(':Generic')
+ 	compile 'net.java.dev.timingframework:timingframework:1.0'
+-	
++	compile 'com.formdev:flatlaf:0.42-20200904.210752-6'
++	compile 'com.formdev:flatlaf-intellij-themes:0.42-20200904.210752-6'
++
++
+ 	// Only include this debug version of the jh library if necessary.
+ 	//compile name:'jh2.with.debug'
+ 	compile 'javax.help:javahelp:2.0.05'

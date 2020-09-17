@@ -1,0 +1,22 @@
+diff --git a/Ghidra/Framework/Docking/src/main/java/docking/widgets/AbstractGCellRenderer.java b/Ghidra/Framework/Docking/src/main/java/docking/widgets/AbstractGCellRenderer.java
+index 48c057437..6eedc4e76 100644
+--- a/Ghidra/Framework/Docking/src/main/java/docking/widgets/AbstractGCellRenderer.java
++++ b/Ghidra/Framework/Docking/src/main/java/docking/widgets/AbstractGCellRenderer.java
+@@ -32,7 +32,7 @@ import docking.widgets.label.GDHtmlLabel;
+  */
+ public abstract class AbstractGCellRenderer extends GDHtmlLabel {
+ 
+-	private static final Color ALTERNATE_BACKGROUND_COLOR = new Color(237, 243, 254);
++	private static final Color ALTERNATE_BACKGROUND_COLOR = new Color(0x32, 0x32, 0x32);
+ 
+ 	/** Allows the user to disable alternating row colors on JLists and JTables */
+ 	private static final String DISABLE_ALTERNATING_ROW_COLORS_PROPERTY =
+@@ -156,7 +156,7 @@ public abstract class AbstractGCellRenderer extends GDHtmlLabel {
+ 	}
+ 
+ 	protected Color getDefaultBackgroundColor() {
+-		return Color.WHITE;
++		return ALTERNATE_BACKGROUND_COLOR;//Color.WHITE;
+ 	}
+ 
+ 	protected Color getBackgroundColorForRow(int row) {

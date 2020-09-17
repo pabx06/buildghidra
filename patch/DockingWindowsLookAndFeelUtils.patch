@@ -1,0 +1,32 @@
+diff --git a/Ghidra/Framework/Docking/src/main/java/ghidra/docking/util/DockingWindowsLookAndFeelUtils.java b/Ghidra/Framework/Docking/src/main/java/ghidra/docking/util/DockingWindowsLookAndFeelUtils.java
+index 1d9ef7bb9..1c5afa881 100644
+--- a/Ghidra/Framework/Docking/src/main/java/ghidra/docking/util/DockingWindowsLookAndFeelUtils.java
++++ b/Ghidra/Framework/Docking/src/main/java/ghidra/docking/util/DockingWindowsLookAndFeelUtils.java
+@@ -23,6 +23,7 @@ import java.util.Map.Entry;
+ import javax.swing.*;
+ import javax.swing.UIManager.LookAndFeelInfo;
+ import javax.swing.plaf.ComponentUI;
++import javax.swing.plaf.basic.BasicLookAndFeel;
+ 
+ import ghidra.docking.util.painting.GRepaintManager;
+ import ghidra.framework.OperatingSystem;
+@@ -30,6 +31,9 @@ import ghidra.framework.Platform;
+ import ghidra.framework.preferences.Preferences;
+ import ghidra.util.*;
+ 
++import com.formdev.flatlaf.intellijthemes.materialthemeuilite.FlatDraculaContrastIJTheme;
++import com.formdev.flatlaf.intellijthemes.materialthemeuilite.*;
++
+ /**
+  * A utility class to manage LookAndFeel (LaF) settings.
+  */
+@@ -74,7 +78,8 @@ public class DockingWindowsLookAndFeelUtils {
+ 		boolean useHistoricalValue = true;
+ 		String laf = Preferences.getProperty(LAST_LOOK_AND_FEEL_KEY, getDefaultLookAndFeelName(),
+ 			useHistoricalValue);
+-		setLookAndFeel(laf);
++		//setLookAndFeel(laf);
++		setLookAndFeel("com.formdev.flatlaf.intellijthemes.materialthemeuilite.FlatDraculaContrastIJTheme");
+ 
+ 		boolean useInvertedColors = getUseInvertedColorsPreference();
+ 		setUseInvertedColors(useInvertedColors);

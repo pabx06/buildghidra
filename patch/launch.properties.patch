@@ -1,0 +1,12 @@
+--- ./Ghidra/RuntimeScripts/Common/support/launch.properties	2020-09-17 14:46:28.388141599 +0200
++++ /home/pbx06/ghidra_9.2_DEV/support/launch.properties	2020-09-09 12:05:24.000000000 +0200
+@@ -80,6 +80,6 @@
+ # generates uncaught exceptions.  Disabling it can be helpful when trying to debug what went
+ # wrong because the ContinuesIntercepter affects the usefulness of the stack trace.
+ #VMARGS=-DContinuesInterceptor.disabled=true
+-
+-# Limit on XML parsing. See https://docs.oracle.com/javase/tutorial/jaxp/limits/limits.html
+-#VMARGS=-Djdk.xml.totalEntitySizeLimit=50000000
++#https://github.com/NationalSecurityAgency/ghidra/issues/1613#issuecomment-597165377
++VMARGS=-Dghidra.util.swing.timeout.seconds=7600
++VMARGS=-Dswing.systemlaf=com.formdev.flatlaf.intellijthemes.materialthemeuilite.FlatDraculaContrastIJTheme

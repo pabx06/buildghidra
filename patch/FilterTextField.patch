@@ -1,0 +1,13 @@
+diff --git a/Ghidra/Framework/Docking/src/main/java/docking/widgets/filter/FilterTextField.java b/Ghidra/Framework/Docking/src/main/java/docking/widgets/filter/FilterTextField.java
+index 6ec44132e..afa8bc01d 100644
+--- a/Ghidra/Framework/Docking/src/main/java/docking/widgets/filter/FilterTextField.java
++++ b/Ghidra/Framework/Docking/src/main/java/docking/widgets/filter/FilterTextField.java
+@@ -42,7 +42,7 @@ public class FilterTextField extends JPanel {
+ 	private static final int FLASH_FREQUENCY_MS = 250;
+ 
+ 	private static Color FLASH_BACKGROUND_COLOR = Color.WHITE;
+-	private static Color FILTERED_BACKGROUND_COLOR = Color.YELLOW;
++	private static Color FILTERED_BACKGROUND_COLOR = new Color(0x11,0x11,0x11); //Color.YELLOW;
+ 	/*package*/ static Color UNEDITABLE_BACKGROUND_COLOR = Color.LIGHT_GRAY;
+ 
+ 	private Color noFlashColor;
