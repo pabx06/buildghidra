@@ -8,6 +8,7 @@ patch ./Ghidra/Framework/Docking/src/main/java/docking/widgets/AbstractGCellRend
 patch ./Ghidra/Framework/Docking/src/main/java/docking/widgets/filter/FilterTextField.java  ../patch/FilterTextField.patch
 patch ./Ghidra/Framework/Docking/src/main/java/docking/widgets/table/GTableHeaderRenderer.java ../patch/GTableHeaderRenderer.patch
 patch ./Ghidra/Framework/Docking/src/main/java/ghidra/docking/util/DockingWindowsLookAndFeelUtils.java ../patch/DockingWindowsLookAndFeelUtils.patch
+patch ./Ghidra/Features/Base/src/main/java/ghidra/app/plugin/core/function/editor/FunctionEditorDialog.java ../patch/FunctionEditorDialog.java
 #patch launch.sh
 patch ./Ghidra/RuntimeScripts/Common/support/launch.properties  ../patch/launch.properties.patch
 patch ./Ghidra/RuntimeScripts/Linux/support/launch.sh ../patch/launch.sh.patch
@@ -15,6 +16,7 @@ patch ./Ghidra/RuntimeScripts/Linux/support/launch.sh ../patch/launch.sh.patch
 #flatlaf
 patch ./Ghidra/Framework/Docking/build.gradle ../patch/build.gradle.patch
 patch ./gradle/support/fetchDependencies.gradle ../patch/fetchDependencies.gradle.patch
+patch ./Ghidra/Framework/Docking/Module.manifest ../patch/Docking.Module.manifest
 
 gradle -q --init-script gradle/support/fetchDependencies.gradle init >/dev/null
 gradle -q buildGhidra
