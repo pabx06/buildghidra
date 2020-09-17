@@ -1,0 +1,5 @@
+downloads/*
+!downloads/gsoap_2.7.13.zip
+builds/
+install/
+arm-lib.tgz
