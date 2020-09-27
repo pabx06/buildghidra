@@ -21,4 +21,5 @@ patch ./Ghidra/Framework/Docking/Module.manifest ../patch/Docking.Module.manifes
 
 gradle -q --init-script gradle/support/fetchDependencies.gradle init >/dev/null
 gradle prepDev
+gradle buildHelp
 gradle -q buildGhidra
