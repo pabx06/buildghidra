@@ -1,2 +1,2 @@
 #!/bin/bash
-tar czvf ghidra-dist.tgz ghidra/build/dist/
+tar czvf ghidra-dist-${TRAVIS_TAG}.tgz ghidra/build/dist/

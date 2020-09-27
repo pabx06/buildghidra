@@ -37,7 +37,7 @@ deploy:
   provider: releases
   api_key:
     secure: GiXjv0oGzOZYiZ+Ba9EGb6f1F9fE0cxhcHrNe4LsQ9r/1CGPK2iqco7EZDpBEZuIkCEFCfuUvj/m7LAqvvR2cYZcTjlwkynRbeQIy2ajiUAb72VjVkfg76m/UpHI8ICwAqIvScmfg0A5JRIXd+jC2cOs+Db5HYJxH4XXMZ47N+aqeDstBQAkOHqR2vJdk690GAtsSn0FS4Q/UW1/jz/zN4lPWE3XQmfFYyzcqhcvZXykfB/UFnwai2uB/s5NgyxXiY0pUcE5ypxIJ9Gxrv1d3PDHARIDWeYbAzLJe9uqnNxfjONsaWG1SKQpYPWvC3fbVW/oO9B7DUtxWnJKyTkb7NjeCQdpjVtoDQPxMArrTcPvZi0BWl4oeEHk+8NVBCjAqa3borHQFEnFv0KcIIEi64P/fcf3AKzxz1cvgV+CpC5MBwyG9Ent1UNOHz8YQSvGb4SQ1ijeaNwlXy//B0BDcsJJK4dhsjYPY2WnpBlJdVdDu6h3PoVg0a1jodG5VWDX7Cjf/h1e+AY7TrzzhxtlmOB2EX2LVANSitHhkvYMvW/CO1/mDIeLlSpCu8iUsiMmf1FsPFylDBqer8zIaMHh142sh4nQLK4vjcpcj6bSGqrYhnS2At4XqzNcS2NLohZUKAvLJY8XZHRSQXvqRqriwDq/sKpqMr50rSgRTUF+vvU=
-  file: ghidra-dist.tgz
+  file: ghidra-dist-${TRAVIS_TAG}.tgz
   on:
     repo: pabx06/buildghidra
     tag : true
