@@ -3,3 +3,4 @@ downloads/*
 builds/
 install/
 arm-lib.tgz
+ghidra/
