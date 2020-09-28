@@ -20,7 +20,7 @@ patch ./Ghidra/RuntimeScripts/Linux/support/launch.sh ../patch/launch.sh.patch
 #flatlaf
 patch ./Ghidra/Framework/Docking/build.gradle ../patch/build.gradle.patch
 patch ./gradle/support/fetchDependencies.gradle ../patch/fetchDependencies.gradle.patch
-#patch ./Ghidra/Framework/Docking/Module.manifest ../patch/Docking.Module.manifest
+patch ./Ghidra/Framework/Docking/Module.manifest ../patch/Docking.Module.manifest
 
 #grep -r 'import db.\*;' *|awk -F':' '{print "sed -i " " \"s|import db.*;|import db.*;import db.Record;|g\" "$1}'|bash
 
@@ -30,4 +30,4 @@ gradle -q buildNatives_linux64
 gradle prepDev
 gradle buildHelp
 gradle eclipse -PeclipsePDE
-gradle -q buildGhidra
+gradle -q -x ip buildGhidra
