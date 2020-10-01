@@ -1,0 +1,12 @@
+diff --git a/Ghidra/Features/Base/src/main/java/ghidra/app/plugin/core/function/editor/FunctionEditorDialog.java b/Ghidra/Features/Base/src/main/java/ghidra/app/plugin/core/function/editor/FunctionEditorDialog.java
+index da0ecfab2..83ffb041f 100644
+--- a/Ghidra/Features/Base/src/main/java/ghidra/app/plugin/core/function/editor/FunctionEditorDialog.java
++++ b/Ghidra/Features/Base/src/main/java/ghidra/app/plugin/core/function/editor/FunctionEditorDialog.java
+@@ -622,6 +622,7 @@ public class FunctionEditorDialog extends DialogComponentProvider implements Mod
+ 
+ 			DataType dataType = (DataType) value;
+ 			Color color = isSelected ? table.getSelectionForeground() : table.getForeground();
++			color=Color.white;
+ 			if (!tableModel.isCellEditable(row, column)) {
+ 				color = isSelected ? Color.yellow : Color.gray;
+ 			}

@@ -13,6 +13,7 @@ patch ./Ghidra/Framework/Docking/src/main/java/docking/widgets/filter/FilterText
 patch ./Ghidra/Framework/Docking/src/main/java/docking/widgets/table/GTableHeaderRenderer.java ../patch/GTableHeaderRenderer.patch
 patch ./Ghidra/Framework/Docking/src/main/java/ghidra/docking/util/DockingWindowsLookAndFeelUtils.java ../patch/DockingWindowsLookAndFeelUtils.patch
 patch ./Ghidra/Features/Base/src/main/java/ghidra/app/plugin/core/function/editor/FunctionEditorDialog.java ../patch/FunctionEditorDialog.java
+patch ./Ghidra/Features/Base/src/main/java/ghidra/app/plugin/core/function/editor/FunctionEditorDialog.java ../patch/FunctionEditorDialog.java.bis
 #patch launch.sh
 patch ./Ghidra/RuntimeScripts/Common/support/launch.properties  ../patch/launch.properties.patch
 patch ./Ghidra/RuntimeScripts/Linux/support/launch.sh ../patch/launch.sh.patch
