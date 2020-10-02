@@ -22,6 +22,12 @@ patch ./Ghidra/Features/Base/src/main/java/ghidra/framework/main/InfoPanel.java 
 patch ./Ghidra/Features/ByteViewer/src/main/java/ghidra/app/plugin/core/byteviewer/ByteViewerPanel.java  ../patch/ByteViewerPanel.patch
 patch ./Ghidra/Features/ByteViewer/src/main/java/ghidra/app/plugin/core/byteviewer/ByteViewerComponent.java  ../patch/ByteViewerComponent.patch
 
+patch ./Ghidra/Features/Base/src/main/java/ghidra/app/plugin/core/interpreter/InterpreterPanel.java ../patch/InterpreterPanel.patch
+patch ./Ghidra/Features/Base/src/main/java/ghidra/app/plugin/core/function/editor/FunctionSignatureTextField.java  ../patch/FunctionSignatureTextField.patch
+
+patch ./Ghidra/Framework/Docking/src/main/java/docking/widgets/DropDownTextField.java  ../patch/DropDownTextField.patch
+patch ./Ghidra/Features/Base/src/main/java/ghidra/framework/main/ConsoleTextPane.java > ../patch/ConsoleTextPane.patch
+
 #patch launch.sh
 patch ./Ghidra/RuntimeScripts/Common/support/launch.properties  ../patch/launch.properties.patch
 patch ./Ghidra/RuntimeScripts/Linux/support/launch.sh ../patch/launch.sh.patch

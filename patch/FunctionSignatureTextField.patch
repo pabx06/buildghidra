@@ -1,0 +1,13 @@
+diff --git a/Ghidra/Features/Base/src/main/java/ghidra/app/plugin/core/function/editor/FunctionSignatureTextField.java b/Ghidra/Features/Base/src/main/java/ghidra/app/plugin/core/function/editor/FunctionSignatureTextField.java
+index d42c13976..f0c61a24d 100644
+--- a/Ghidra/Features/Base/src/main/java/ghidra/app/plugin/core/function/editor/FunctionSignatureTextField.java
++++ b/Ghidra/Features/Base/src/main/java/ghidra/app/plugin/core/function/editor/FunctionSignatureTextField.java
+@@ -34,7 +34,7 @@ class FunctionSignatureTextField extends JTextPane {
+ 	private static final String ENTER_ACTION_NAME = "ENTER";
+ 	private static final String ESCAPE_ACTION_NAME = "ESCAPE";
+ 	private static final String TAB_ACTION_NAME = "TAB";
+-	public static Color DEFAULT_COLOR = Color.black;
++	public static Color DEFAULT_COLOR = Color.white;
+ 	public static Color PARAMETER_NAME_COLOR = new Color(155, 50, 155);
+ 	public static Color FUNCTION_NAME_COLOR = blue;
+ 	public static Color ERROR_NAME_COLOR = red;

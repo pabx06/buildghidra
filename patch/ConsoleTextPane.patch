@@ -1,0 +1,13 @@
+diff --git a/Ghidra/Features/Base/src/main/java/ghidra/framework/main/ConsoleTextPane.java b/Ghidra/Features/Base/src/main/java/ghidra/framework/main/ConsoleTextPane.java
+index 8457f2e2d..e013db510 100644
+--- a/Ghidra/Features/Base/src/main/java/ghidra/framework/main/ConsoleTextPane.java
++++ b/Ghidra/Features/Base/src/main/java/ghidra/framework/main/ConsoleTextPane.java
+@@ -200,7 +200,7 @@ public class ConsoleTextPane extends JTextPane implements OptionsChangeListener
+ 		outputAttributeSet.addAttribute(StyleConstants.FontSize, font.getSize());
+ 		outputAttributeSet.addAttribute(StyleConstants.Italic, font.isItalic());
+ 		outputAttributeSet.addAttribute(StyleConstants.Bold, font.isBold());
+-		outputAttributeSet.addAttribute(StyleConstants.Foreground, Color.BLACK);
++		outputAttributeSet.addAttribute(StyleConstants.Foreground, Color.WHITE);
+ 
+ 		errorAttributeSet = new SimpleAttributeSet();
+ 		errorAttributeSet.addAttribute(CUSTOM_ATTRIBUTE_KEY, ERROR_ATTRIBUTE_VALUE);
