@@ -26,7 +26,7 @@ patch ./Ghidra/Features/Base/src/main/java/ghidra/app/plugin/core/interpreter/In
 patch ./Ghidra/Features/Base/src/main/java/ghidra/app/plugin/core/function/editor/FunctionSignatureTextField.java  ../patch/FunctionSignatureTextField.patch
 
 patch ./Ghidra/Framework/Docking/src/main/java/docking/widgets/DropDownTextField.java  ../patch/DropDownTextField.patch
-patch ./Ghidra/Features/Base/src/main/java/ghidra/framework/main/ConsoleTextPane.java > ../patch/ConsoleTextPane.patch
+patch ./Ghidra/Features/Base/src/main/java/ghidra/framework/main/ConsoleTextPane.java  ../patch/ConsoleTextPane.patch
 
 #patch launch.sh
 patch ./Ghidra/RuntimeScripts/Common/support/launch.properties  ../patch/launch.properties.patch
