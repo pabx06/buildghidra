@@ -1,0 +1,13 @@
+diff --git a/Ghidra/Features/Base/src/main/java/ghidra/app/plugin/core/hover/AbstractReferenceHover.java b/Ghidra/Features/Base/src/main/java/ghidra/app/plugin/core/hover/AbstractReferenceHover.java
+index ee2335e0c..214c0ac1d 100644
+--- a/Ghidra/Features/Base/src/main/java/ghidra/app/plugin/core/hover/AbstractReferenceHover.java
++++ b/Ghidra/Features/Base/src/main/java/ghidra/app/plugin/core/hover/AbstractReferenceHover.java
+@@ -44,7 +44,7 @@ public abstract class AbstractReferenceHover extends AbstractConfigurableHover {
+ 
+ 	public static final int WINDOW_OFFSET = 50;
+ 
+-	protected static final Color BACKGROUND_COLOR = new Color(255, 255, 230);
++	protected static final Color BACKGROUND_COLOR = new Color(0x32, 0x32, 0x32);
+ 
+ 	protected CodeFormatService codeFormatService;
+ 	protected ListingPanel panel;

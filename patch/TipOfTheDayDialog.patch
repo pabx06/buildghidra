@@ -1,0 +1,13 @@
+diff --git a/Ghidra/Features/Base/src/main/java/ghidra/app/plugin/core/totd/TipOfTheDayDialog.java b/Ghidra/Features/Base/src/main/java/ghidra/app/plugin/core/totd/TipOfTheDayDialog.java
+index 799af68a5..d0f356d6f 100644
+--- a/Ghidra/Features/Base/src/main/java/ghidra/app/plugin/core/totd/TipOfTheDayDialog.java
++++ b/Ghidra/Features/Base/src/main/java/ghidra/app/plugin/core/totd/TipOfTheDayDialog.java
+@@ -96,7 +96,7 @@ class TipOfTheDayDialog extends DialogComponentProvider {
+ 			BorderFactory.createCompoundBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10),
+ 				BorderFactory.createLineBorder(Color.BLACK));
+ 		panel.setBorder(panelBorder);
+-		panel.setBackground(Color.WHITE);
++		//panel.setBackground(Color.WHITE);
+ 
+ 		JLabel label = new GLabel("Did you know...", tipIcon, SwingConstants.LEFT);
+ 		label.setFont(new Font("dialog", Font.BOLD, 12));

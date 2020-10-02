@@ -1,0 +1,13 @@
+diff --git a/Ghidra/Features/ByteViewer/src/main/java/ghidra/app/plugin/core/byteviewer/ByteViewerComponent.java b/Ghidra/Features/ByteViewer/src/main/java/ghidra/app/plugin/core/byteviewer/ByteViewerComponent.java
+index 125554a2d..e7ac5be12 100644
+--- a/Ghidra/Features/ByteViewer/src/main/java/ghidra/app/plugin/core/byteviewer/ByteViewerComponent.java
++++ b/Ghidra/Features/ByteViewer/src/main/java/ghidra/app/plugin/core/byteviewer/ByteViewerComponent.java
+@@ -867,7 +867,7 @@ public class ByteViewerComponent extends FieldPanel implements FieldMouseListene
+ 
+ 	private class ByteViewerBackgroundColorModel implements BackgroundColorModel {
+ 
+-		private Color defaultBackgroundColor = Color.WHITE;
++		private Color defaultBackgroundColor = Color.darkGray;
+ 
+ 		@Override
+ 		public Color getBackgroundColor(BigInteger index) {
