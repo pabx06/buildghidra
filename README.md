@@ -18,3 +18,4 @@
 ### TODO List
 - finish Bytes Browser color
 - tweak  functionEditorDialogue DataTyper/Editor/CellEdit/Render
+- slow Function tags plugins
