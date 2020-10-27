@@ -1,8 +1,8 @@
 #!/bin/bash
-#export PATH="${PWD}/downloads/amazon-corretto-11.0.8.10.1-linux-x64/bin/:$PATH"
-#export JAVA_HOME="${PWD}/downloads/amazon-corretto-11.0.8.10.1-linux-x64"
-#git clone https://github.com/NationalSecurityAgency/ghidra.git
-#git clone https://github.com/NationalSecurityAgency/ghidra-data
+export PATH="${PWD}/downloads/amazon-corretto-11.0.8.10.1-linux-x64/bin/:$PATH"
+export JAVA_HOME="${PWD}/downloads/amazon-corretto-11.0.8.10.1-linux-x64"
+git clone https://github.com/NationalSecurityAgency/ghidra.git
+git clone https://github.com/NationalSecurityAgency/ghidra-data
 pushd ghidra
 git log|head -n1
 
@@ -17,7 +17,7 @@ echo "[+] Patching Launch script"
 #flatlaf
 echo "[+] Patching gradle script for FlatLaf"
 . ../scripts/patchFlatLaf.sh
-exit
+
 #Processors Manuals
 wget 'https://raw.githubusercontent.com/bdarmofal/proc_manual/master/ghidra_manuals/Armv7AR_errata.pdf' -O ./Ghidra/Processors/ARM/data/manuals/Armv7AR_errata.pdf
 #todo take a look at https://github.com/rickhohler/ghidra_2020/blob/bfd123123eb886b65220571f5cbf60c64784d8d5/scripts/ghidra_processor_docs_downloader.py
