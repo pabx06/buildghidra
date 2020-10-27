@@ -1,5 +1,5 @@
 diff --git a/gradle/support/fetchDependencies.gradle b/gradle/support/fetchDependencies.gradle
-index 03f64d4c2..da3a95faa 100644
+index 03f64d4c2..6c7397192 100644
 --- a/gradle/support/fetchDependencies.gradle
 +++ b/gradle/support/fetchDependencies.gradle
 @@ -55,6 +55,8 @@ ext.HFS_ZIP = 'https://sourceforge.net/projects/catacombae/files/HFSExplorer/0.2
@@ -32,13 +32,13 @@ index 03f64d4c2..da3a95faa 100644
        validateChecksum(generateChecksum(file), AXML_SHA_256);
     }
 +
-+   file = new File(DOWNLOADS_DIR, 'flatlaf-intellij-themes-0.42-20200904.210752-6.jar')
++   file = new File(DOWNLOADS_DIR, 'flatlaf-intellij-themes-0.44-20201027.013719-11.jar')
 +   if (!FLATLAFTHEME_SHA_256.equals(generateChecksum(file))) {
 +      download (FLATLAFTHEME_ZIP, file.path)
 +      validateChecksum(generateChecksum(file), FLATLAFTHEME_SHA_256);
 +   }
 +
-+   file = new File(DOWNLOADS_DIR, 'flatlaf-0.42-20200904.210752-6.jar')
++   file = new File(DOWNLOADS_DIR, 'flatlaf-0.44-20201027.013719-11.jar')
 +   if (!FLATLAF_SHA_256.equals(generateChecksum(file))) {
 +      download (FLATLAF_ZIP, file.path)
 +      validateChecksum(generateChecksum(file), FLATLAF_SHA_256);
@@ -63,8 +63,8 @@ index 03f64d4c2..da3a95faa 100644
 + * Copies the AXMLPrinter2 jar to the flat repository
 + */
 +def copyFLATLAF() {
-+   FileUtils.copyFile(new File(DOWNLOADS_DIR, 'flatlaf-intellij-themes-0.42-20200904.210752-6.jar'), new File(FLAT_REPO_DIR, "flatlaf-intellij-themes-0.42-20200904.210752-6.jar"));
-+   FileUtils.copyFile(new File(DOWNLOADS_DIR, 'flatlaf-0.42-20200904.210752-6.jar'), new File(FLAT_REPO_DIR, "flatlaf-0.42-20200904.210752-6.jar"));
++   FileUtils.copyFile(new File(DOWNLOADS_DIR, 'flatlaf-intellij-themes-0.44-20201027.013719-11.jar'), new File(FLAT_REPO_DIR, "flatlaf-intellij-themes-0.44-20201027.013719-11.jar"));
++   FileUtils.copyFile(new File(DOWNLOADS_DIR, 'flatlaf-0.44-20201027.013719-11.jar'), new File(FLAT_REPO_DIR, "flatlaf-0.44-20201027.013719-11.jar"));
 +}
 +
 +
