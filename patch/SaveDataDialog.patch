@@ -1,8 +1,8 @@
 diff --git a/Ghidra/Framework/Project/src/main/java/ghidra/framework/main/SaveDataDialog.java b/Ghidra/Framework/Project/src/main/java/ghidra/framework/main/SaveDataDialog.java
-index 125c130d9..bbdf903ab 100644
+index da43ed036..876a6e62e 100644
 --- a/Ghidra/Framework/Project/src/main/java/ghidra/framework/main/SaveDataDialog.java
 +++ b/Ghidra/Framework/Project/src/main/java/ghidra/framework/main/SaveDataDialog.java
-@@ -266,7 +266,7 @@ public class SaveDataDialog extends DialogComponentProvider {
+@@ -265,7 +265,7 @@ public class SaveDataDialog extends DialogComponentProvider {
  		yesButton.setEnabled(false);
  		for (int i = 0; i < files.size(); i++) {
  			checkboxes[i] = new GCheckBox(files.get(i).getName());

@@ -1,10 +1,10 @@
 diff --git a/Ghidra/Framework/Docking/Module.manifest b/Ghidra/Framework/Docking/Module.manifest
-index e6cdd58e7..47d976369 100644
+index e6cdd58e7..4801f4276 100644
 --- a/Ghidra/Framework/Docking/Module.manifest
 +++ b/Ghidra/Framework/Docking/Module.manifest
 @@ -1,2 +1,4 @@
  MODULE FILE LICENSE: lib/timingframework-1.0.jar BSD
  MODULE FILE LICENSE: lib/javahelp-2.0.05.jar GPL 2 With Classpath Exception
-+MODULE FILE LICENSE: lib/flatlaf-0.42-20200904.210752-6.jar Apache License 2.0
-+MODULE FILE LICENSE: lib/flatlaf-intellij-themes-0.42-20200904.210752-6.jar Apache License 2.0
++MODULE FILE LICENSE: lib/flatlaf-0.44-20201027.013719-11.jar Apache License 2.0
++MODULE FILE LICENSE: lib/flatlaf-intellij-themes-0.44-20201027.013719-11.jar Apache License 2.0
 \ No newline at end of file

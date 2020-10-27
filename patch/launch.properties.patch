@@ -1,6 +1,8 @@
---- ./Ghidra/RuntimeScripts/Common/support/launch.properties	2020-09-17 14:46:28.388141599 +0200
-+++ /home/pbx06/ghidra_9.2_DEV/support/launch.properties	2020-09-09 12:05:24.000000000 +0200
-@@ -80,6 +80,6 @@
+diff --git a/Ghidra/RuntimeScripts/Common/support/launch.properties b/Ghidra/RuntimeScripts/Common/support/launch.properties
+index 05dab23e0..0bea1dbc9 100644
+--- a/Ghidra/RuntimeScripts/Common/support/launch.properties
++++ b/Ghidra/RuntimeScripts/Common/support/launch.properties
+@@ -80,6 +80,6 @@ VMARGS_WINDOWS=-Dlog4j.skipJansi=true
  # generates uncaught exceptions.  Disabling it can be helpful when trying to debug what went
  # wrong because the ContinuesIntercepter affects the usefulness of the stack trace.
  #VMARGS=-DContinuesInterceptor.disabled=true
