@@ -41,6 +41,6 @@ deploy:
   file: ghidra-dist-${TRAVIS_TAG}.tgz
   skip_cleanup: 'true'
   on:
-    tag : true
+    tags : true
     all_branches: true
     
