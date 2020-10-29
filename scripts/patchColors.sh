@@ -18,3 +18,5 @@ patch ./Ghidra/Features/Base/src/main/java/ghidra/app/plugin/core/function/edito
 
 patch ./Ghidra/Framework/Docking/src/main/java/docking/widgets/DropDownTextField.java  ../patch/DropDownTextField.patch
 patch ./Ghidra/Features/Base/src/main/java/ghidra/framework/main/ConsoleTextPane.java  ../patch/ConsoleTextPane.patch
+patch ./Ghidra/Framework/Docking/src/main/java/docking/widgets/filechooser/GhidraFileChooser.java ../patch/GhidraFileChooser.patch
+patch ./Ghidra/Features/FunctionID/src/main/java/ghidra/feature/fid/plugin/ActiveFidConfigureDialog.java  ../patch/ActiveFidConfigureDialog.patch

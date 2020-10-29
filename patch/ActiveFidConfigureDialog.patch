@@ -1,0 +1,13 @@
+diff --git a/Ghidra/Features/FunctionID/src/main/java/ghidra/feature/fid/plugin/ActiveFidConfigureDialog.java b/Ghidra/Features/FunctionID/src/main/java/ghidra/feature/fid/plugin/ActiveFidConfigureDialog.java
+index e9530bb46..1f880e12f 100644
+--- a/Ghidra/Features/FunctionID/src/main/java/ghidra/feature/fid/plugin/ActiveFidConfigureDialog.java
++++ b/Ghidra/Features/FunctionID/src/main/java/ghidra/feature/fid/plugin/ActiveFidConfigureDialog.java
+@@ -89,7 +89,7 @@ public class ActiveFidConfigureDialog extends DialogComponentProvider {
+ 	private Component buildCheckBoxPanel() {
+ 		JPanel panel = new JPanel(new VerticalLayout(5));
+ 		panel.setOpaque(true);
+-		panel.setBackground(Color.WHITE);
++		//panel.setBackground(Color.WHITE);
+ 		panel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+ 		for (FidFile fidFile : fidFiles) {
+ 			GCheckBox checkbox = new GCheckBox(fidFile.getName(), fidFile.isActive());
