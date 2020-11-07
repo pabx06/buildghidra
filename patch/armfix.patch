@@ -1,0 +1,19 @@
+diff --git a/Ghidra/Features/Decompiler/src/main/java/ghidra/app/decompiler/DecompileCallback.java b/Ghidra/Features/Decompiler/src/main/java/ghidra/app/decompiler/DecompileCallback.java
+index 1140ca057..fd4212f39 100644
+--- a/Ghidra/Features/Decompiler/src/main/java/ghidra/app/decompiler/DecompileCallback.java
++++ b/Ghidra/Features/Decompiler/src/main/java/ghidra/app/decompiler/DecompileCallback.java
+@@ -461,8 +461,13 @@ public class DecompileCallback {
+ 			entryContext = programContext.getRegisterValue(baseContextRegister, funcEntry);
+ 		}
+ 
++		//odd -> even
++		if((addr.getOffset() & (byte) 1 ) ==1 ) {
++			addr = addr.subtract(1);
++		}
+ 		lastPseudoInstructionBlock =
+-			pseudoDisassembler.pseudoDisassembleBlock(addr, entryContext, 64);
++				pseudoDisassembler.pseudoDisassembleBlock(addr, entryContext, 64);
++
+ 		if (lastPseudoInstructionBlock != null) {
+ 			InstructionError error = lastPseudoInstructionBlock.getInstructionConflict();				// Look for zero-byte run first
+ 			if (error != null &&

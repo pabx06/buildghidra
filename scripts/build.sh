@@ -18,6 +18,10 @@ echo "[+] Patching Launch script"
 echo "[+] Patching gradle script for FlatLaf"
 . ../scripts/patchFlatLaf.sh
 
+#flatlaf
+echo "[+] Patching ARM decompiler callback"
+. ../scripts/patchFlatLaf.sh
+
 #Processors Manuals
 echo "[+] Downloading ARM processor Manual"
 wget -q 'https://raw.githubusercontent.com/bdarmofal/proc_manual/master/ghidra_manuals/Armv7AR_errata.pdf' -O ./Ghidra/Processors/ARM/data/manuals/Armv7AR_errata.pdf
