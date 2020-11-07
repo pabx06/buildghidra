@@ -20,7 +20,7 @@ echo "[+] Patching gradle script for FlatLaf"
 
 #flatlaf
 echo "[+] Patching ARM decompiler callback"
-. ../scripts/patchFlatLaf.sh
+. ../scripts/patchArm.sh
 
 #Processors Manuals
 echo "[+] Downloading ARM processor Manual"
