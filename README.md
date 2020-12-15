@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/pabx06/buildghidra.svg?branch=master)](https://travis-ci.com/pabx06/buildghidra)
 
-[Ghidra](https://github.com/NationalSecurityAgency/ghidra) master branch build relase wit color dark theme + colors patch
+[Ghidra](https://github.com/NationalSecurityAgency/ghidra) master branch build relase with color dark theme + colors patch
 
 ![ghidra_dark](/Screenshot.png?raw=true)
 
@@ -12,6 +12,7 @@
 3. You know have a second code browser icon [dark](/dark_night.png). us it (drag and drop project file)
 
 ### ChangeLog
+- armfix branche: a patch that fix bug in decompiler not decompiling odd of switch's jumptable
 - v1.1.1 Color Console Interpreter
 - v1.1.0  Color About,Tips of the day, Bytes Viewer, save data,  CodeBrowser Tooltip, ARM manual
 
